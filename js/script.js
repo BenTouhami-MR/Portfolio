@@ -79,6 +79,8 @@ const translations = {
         // Projects Section
         'projects-title': 'Personal |Projects',
         'projects-subtitle': 'Building solutions with cutting-edge technologies',
+        'proj-kappa-title': 'Big Data Real-Time Apartment Analytics with Kappa Architecture',
+        'proj-kappa-desc': 'Real-time data pipeline using Kappa Architecture for analyzing apartment listings. Implements streaming data processing with Apache Kafka, Spark, and ClickHouse. Features include real-time visualizations with FastAPI/React, materialized views for optimized queries, and HDFS data lake for storing apartment descriptions. Handles high-velocity data ingestion and provides interactive dashboards for market analysis.',
         'proj-ai-chatbot-title': 'Designing a Big Data Architecture for an AI Trend Chatbot Based on RAG – Azure',
         'proj-ai-chatbot-desc': 'End-to-end automated data pipeline that extracts daily news on AI trends. Leveraged Azure tools to orchestrate, process, and manage data ingestion, ensuring reliable and up-to-date content for the chatbot application.',
         'proj-powerbi-title': 'Interactive Sales Dashboard',
@@ -160,6 +162,8 @@ const translations = {
         // Projects Section
         'projects-title': 'Projets |Personnels',
         'projects-subtitle': 'Construction de solutions avec des technologies de pointe',
+        'proj-kappa-title': 'Analyse Big Data en Temps Réel d\'Appartements avec Architecture Kappa',
+        'proj-kappa-desc': 'Pipeline de données en temps réel utilisant l\'Architecture Kappa pour analyser les annonces d\'appartements. Implémente le traitement de données en streaming avec Apache Kafka, Spark et ClickHouse. Comprend des visualisations en temps réel avec FastAPI/React, des vues matérialisées pour des requêtes optimisées, et un lac de données HDFS pour stocker les descriptions d\'appartements. Gère l\'ingestion de données à haute vélocité et fournit des tableaux de bord interactifs pour l\'analyse du marché.',
         'proj-ai-chatbot-title': 'Conception d\'une Architecture Big Data pour un Chatbot de Tendances IA Basé sur RAG – Azure',
         'proj-ai-chatbot-desc': 'Pipeline de données automatisé de bout en bout qui extrait quotidiennement les actualités sur les tendances IA. Utilisation des outils Azure pour orchestrer, traiter et gérer l\'ingéstion de données, assurant un contenu fiable et à jour pour l\'application de chatbot.',
         'proj-powerbi-title': 'Tableau de Bord Interactif des Ventes',
