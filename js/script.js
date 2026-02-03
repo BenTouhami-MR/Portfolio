@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         loader.classList.add('hide');
     }, 1500);
-    
+
     // Initialize dynamic counters after page load
     updateDynamicCounters();
 });
@@ -15,7 +15,7 @@ function updateDynamicCounters() {
     const certifications = document.querySelectorAll('.certificats .certif');
     const certificationsCount = certifications.length;
     document.getElementById('certifications-count').textContent = certificationsCount + '+';
-    
+
     // Count projects (from both Projects and Professional Experience sections)
     const personalProjects = document.querySelectorAll('#projects .project-card');
     const professionalProjects = document.querySelectorAll('#professional-experience .project-card');
@@ -36,7 +36,7 @@ const translations = {
         'nav-projects': 'Projects',
         'nav-certificates': 'Certificates',
         'nav-contact': 'Contact',
-        
+
         // Home Section
         'home-greeting': '👋 Hello, my name is',
         'home-role': 'Data |Engineer',
@@ -44,18 +44,18 @@ const translations = {
         'home-download-cv': 'Download CV',
         'home-contact': 'Get in Touch',
         'home-scroll': 'Scroll Down',
-        
+
         // About Section
         'about-title': 'About |Me',
         'about-desc': 'Enthusiastic Data Engineer, graduated from the National School of Applied Sciences of Al Hoceima, driven by a passion for IT, AI, and data. Eager to learn and contribute to challenging projects, I possess strong skills in data engineering, big data technologies, and data science. Committed to continuous growth, I am excited about the opportunities to apply my knowledge and skills in real-world scenarios.',
         'about-projects': 'Projects Completed',
         'about-certifications': 'Certifications',
-        
+
         // Skills Section
         'skills-title': 'My |Skills',
         'skills-subtitle': 'Technologies and tools I work with',
         'skills-languages': 'Languages',
-        
+
         // Education Section
         'education-title': 'Edu|cation',
         'education-subtitle': 'Academic background and qualifications',
@@ -65,22 +65,24 @@ const translations = {
         'education-lyon-degree': 'Master in Data Science',
         'education-lyon-school': 'Claude Bernard University Lyon 1',
         'education-lyon-desc': 'Advanced studies in Data Science, focusing on machine learning, deep learning, statistical analysis, and AI applications. Developing expertise in cutting-edge data science methodologies.',
-        
+
         // Professional Experience Section
         'professional-title': 'Professional |Experiences',
         'professional-subtitle': 'Real-world impact through data engineering',
-        'prof-ds-internship-title': 'Data Science Internship at Digital Place (February - July 2025)',
+        'prof-ds-internship-title': 'Data Science and DevOps Internship at Digital Place (February - July 2025)',
         'prof-ds-internship-subtitle': 'Vision Pipeline for Trailer Automation & Tracking',
-        'prof-ds-internship-desc': 'Designed and deployed an end-to-end computer vision pipeline for automated trailer detection, segmentation, and tracking. Trained YOLOv11 (97.8% accuracy) for license plate detection, EfficientNet-B2 for Moroccan/European plate classification, and integrated PaddleOCR for text extraction. Applied DINOv2 for visual embeddings enrichment. Deployed with FastAPI + React using Docker and Bitbucket CI/CD on VPS.',
+        'prof-ds-internship-desc': 'Designed and deployed an end-to-end computer vision pipeline for automated trailer detection, segmentation, and tracking. Trained YOLOv11 (97.8% accuracy) for license plate detection, EfficientNet-B2 for Moroccan/European plate classification, and integrated PaddleOCR for text extraction. Applied DINOv2 for visual embeddings enrichment. Integrated models into a FastAPI (backend) and React (frontend) application, containerized with Docker. Orchestrated CI/CD pipeline via Bitbucket Pipelines for automated build and continuous deployment on VPS.',
         'prof-internship-title': 'Data Engineering Internship at Shiftbricks (July - September 2024)',
         'prof-internship-subtitle': 'Scalable Data Ingestion Pipeline for AI Applications',
         'prof-internship-desc': 'During my three-month internship at Shiftbricks, I designed and implemented a scalable data ingestion pipeline. The project involved extracting and transforming unstructured Arabic documents into structured formats using the Medallion Architecture. Automation was achieved using Apache Airflow. I utilized Python, PostgreSQL, and the FARM Stack.',
-        
+
         // Projects Section
         'projects-title': 'Personal |Projects',
         'projects-subtitle': 'Building solutions with cutting-edge technologies',
         'proj-kappa-title': 'Big Data Real-Time Apartment Analytics with Kappa Architecture',
         'proj-kappa-desc': 'Real-time data pipeline using Kappa Architecture for analyzing apartment listings. Implements streaming data processing with Apache Kafka, Spark, and ClickHouse. Features include real-time visualizations with FastAPI/React, materialized views for optimized queries, and HDFS data lake for storing apartment descriptions. Handles high-velocity data ingestion and provides interactive dashboards for market analysis.',
+        'proj-mlops-churn-title': 'MLOps Pipeline for Telecom Customer Churn Prediction',
+        'proj-mlops-churn-desc': 'End-to-end MLOps pipeline for customer churn prediction in telecommunications. Implemented real-time model monitoring in production using Evidently, Prometheus, and Grafana. Automated MLOps orchestration (retraining, evaluation, deployment) with MLflow and Airflow from customer data stored in Amazon RDS. Model deployed to production on Amazon S3, containerized with Docker, and deployed on an EC2 instance.',
         'proj-ai-chatbot-title': 'Designing a Big Data Architecture for an AI Trend Chatbot Based on RAG – Azure',
         'proj-ai-chatbot-desc': 'End-to-end automated data pipeline that extracts daily news on AI trends. Leveraged Azure tools to orchestrate, process, and manage data ingestion, ensuring reliable and up-to-date content for the chatbot application.',
         'proj-powerbi-title': 'Interactive Sales Dashboard',
@@ -98,15 +100,15 @@ const translations = {
         'proj-student-title': 'Student Management App',
         'proj-student-desc': 'User-friendly student management application with Tkinter in Python. Seamless integration with MySQL for optimal data management.',
         'btn-more-details': 'More Details',
-        
+
         // Certificates Section
         'certificates-title': 'Certi|ficates',
         'certificates-subtitle': 'Professional certifications and achievements',
-        
+
         // Contact Section
         'contact-title': 'Contact |Me',
         'contact-subtitle': 'Let\'s work together on your next project',
-        
+
         // Footer
         'footer-copyright': '© 2024 - Developed by MR. Ben Touhami | All rights reserved.'
     },
@@ -119,7 +121,7 @@ const translations = {
         'nav-projects': 'Projets',
         'nav-certificates': 'Certificats',
         'nav-contact': 'Contact',
-        
+
         // Home Section
         'home-greeting': '👋 Bonjour, je m\'appelle',
         'home-role': 'Ingénieur de |Données',
@@ -127,18 +129,18 @@ const translations = {
         'home-download-cv': 'Télécharger CV',
         'home-contact': 'Me Contacter',
         'home-scroll': 'Défiler',
-        
+
         // About Section
         'about-title': 'À Propos |de Moi',
         'about-desc': 'Ingénieur de données enthousiaste, diplômé de l\'École Nationale des Sciences Appliquées d\'Al Hoceima, animé par une passion pour l\'informatique, l\'IA et les données. Désireux d\'apprendre et de contribuer à des projets stimulants, je possède de solides compétences en ingénierie des données, technologies big data et science des données. Engagé dans une croissance continue, je suis enthousiaste à l\'idée d\'appliquer mes connaissances et compétences dans des scénarios réels.',
         'about-projects': 'Projets Réalisés',
         'about-certifications': 'Certifications',
-        
+
         // Skills Section
         'skills-title': 'Mes |Compétences',
         'skills-subtitle': 'Technologies et outils que j\'utilise',
         'skills-languages': 'Langues',
-        
+
         // Education Section
         'education-title': 'For|mation',
         'education-subtitle': 'Parcours académique et qualifications',
@@ -148,22 +150,24 @@ const translations = {
         'education-lyon-degree': 'Master en Data Science',
         'education-lyon-school': 'Université Claude Bernard Lyon 1',
         'education-lyon-desc': 'Études avancées en Data Science, axées sur l\'apprentissage automatique, le deep learning, l\'analyse statistique et les applications IA. Développement d\'expertise dans les méthodologies de pointe en science des données.',
-        
+
         // Professional Experience Section
         'professional-title': 'Expériences |Professionnelles',
         'professional-subtitle': 'Impact concret grâce à l\'ingénierie des données',
-        'prof-ds-internship-title': 'Stage en Data Science chez Digital Place (Février - Juillet 2025)',
+        'prof-ds-internship-title': 'Stage en Data Science et DevOps chez Digital Place (Février - Juillet 2025)',
         'prof-ds-internship-subtitle': 'Pipeline Vision pour l\'Automatisation et le Suivi des Semi-Remorques',
-        'prof-ds-internship-desc': 'Conçu et déployé un pipeline de vision par ordinateur pour la détection, segmentation et suivi automatisés des semi-remorques. Entraîné YOLOv11 (97,8% de précision) pour la détection de plaques, EfficientNet-B2 pour la classification des plaques marocaines/européennes, et intégré PaddleOCR pour l\'extraction de texte. Appliqué DINOv2 pour l\'enrichissement des embeddings visuels. Déployé avec FastAPI + React en utilisant Docker et Bitbucket CI/CD sur VPS.',
+        'prof-ds-internship-desc': 'Conçu et déployé un pipeline de vision par ordinateur pour la détection, segmentation et suivi automatisés des semi-remorques. Entraîné YOLOv11 (97,8% de précision) pour la détection de plaques, EfficientNet-B2 pour la classification des plaques marocaines/européennes, et intégré PaddleOCR pour l\'extraction de texte. Appliqué DINOv2 pour l\'enrichissement des embeddings visuels. Intégré les modèles dans une application FastAPI (backend) et React (frontend), conteneurisée avec Docker. Orchestré le pipeline CI/CD via Bitbucket Pipelines pour l\'automatisation du build et du déploiement continu sur VPS.',
         'prof-internship-title': 'Stage en Ingénierie des Données chez Shiftbricks (Juillet - Septembre 2024)',
         'prof-internship-subtitle': 'Pipeline d\'Ingéstion de Données Évolutif pour Applications IA',
         'prof-internship-desc': 'Durant mon stage de trois mois chez Shiftbricks, j\'ai conçu et implémenté un pipeline d\'ingéstion de données évolutif. Le projet impliquait l\'extraction et la transformation de documents arabes non structurés en formats structurés utilisant l\'Architecture Medallion. L\'automatisation a été réalisée avec Apache Airflow. J\'ai utilisé Python, PostgreSQL et le stack FARM.',
-        
+
         // Projects Section
         'projects-title': 'Projets |Personnels',
         'projects-subtitle': 'Construction de solutions avec des technologies de pointe',
         'proj-kappa-title': 'Analyse Big Data en Temps Réel d\'Appartements avec Architecture Kappa',
         'proj-kappa-desc': 'Pipeline de données en temps réel utilisant l\'Architecture Kappa pour analyser les annonces d\'appartements. Implémente le traitement de données en streaming avec Apache Kafka, Spark et ClickHouse. Comprend des visualisations en temps réel avec FastAPI/React, des vues matérialisées pour des requêtes optimisées, et un lac de données HDFS pour stocker les descriptions d\'appartements. Gère l\'ingestion de données à haute vélocité et fournit des tableaux de bord interactifs pour l\'analyse du marché.',
+        'proj-mlops-churn-title': 'Pipeline MLOps pour la Prédiction du Churn Client Télécom',
+        'proj-mlops-churn-desc': 'Pipeline MLOps de bout en bout pour la prédiction du churn client dans le secteur des télécommunications. Mise en place d\'un système de monitoring temps réel du modèle en production avec Evidently, Prometheus et Grafana. Automatisation de l\'orchestration MLOps (réentraînement, évaluation, déploiement) avec MLflow et Airflow à partir des données clients stockées dans Amazon RDS. Déploiement du modèle en production sur Amazon S3, conteneurisation avec Docker et déploiement sur une instance EC2.',
         'proj-ai-chatbot-title': 'Conception d\'une Architecture Big Data pour un Chatbot de Tendances IA Basé sur RAG – Azure',
         'proj-ai-chatbot-desc': 'Pipeline de données automatisé de bout en bout qui extrait quotidiennement les actualités sur les tendances IA. Utilisation des outils Azure pour orchestrer, traiter et gérer l\'ingéstion de données, assurant un contenu fiable et à jour pour l\'application de chatbot.',
         'proj-powerbi-title': 'Tableau de Bord Interactif des Ventes',
@@ -181,15 +185,15 @@ const translations = {
         'proj-student-title': 'Application de Gestion d\'Étudiants',
         'proj-student-desc': 'Application conviviale de gestion d\'étudiants avec Tkinter en Python. Intégration transparente avec MySQL pour une gestion optimale des données.',
         'btn-more-details': 'Plus de Détails',
-        
+
         // Certificates Section
         'certificates-title': 'Certi|ficats',
         'certificates-subtitle': 'Certifications professionnelles et réalisations',
-        
+
         // Contact Section
         'contact-title': 'Me |Contacter',
         'contact-subtitle': 'Travaillons ensemble sur votre prochain projet',
-        
+
         // Footer
         'footer-copyright': '© 2024 - Développé par MR. Ben Touhami | Tous droits réservés.'
     }
@@ -198,13 +202,13 @@ const translations = {
 function toggleLanguage() {
     currentLang = currentLang === 'en' ? 'fr' : 'en';
     document.getElementById('lang-text').textContent = currentLang === 'en' ? 'FR' : 'EN';
-    
+
     // Update all elements with data-translate attribute
     document.querySelectorAll('[data-translate]').forEach(element => {
         const key = element.getAttribute('data-translate');
         if (translations[currentLang][key]) {
             const text = translations[currentLang][key];
-            
+
             // Check if element is a heading with span (for gradient effect)
             if (element.tagName === 'H1' && element.querySelector('span')) {
                 // Use pipe character | as separator for span content
@@ -252,7 +256,7 @@ function toggleLanguage() {
             }
         }
     });
-    
+
     // Re-update dynamic counters after translation to ensure they show correct numbers
     updateDynamicCounters();
 }
@@ -294,13 +298,13 @@ function handleMenu() {
 let lastScroll = 0;
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
+
     if (currentScroll > 50) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
     }
-    
+
     lastScroll = currentScroll;
 });
 
@@ -309,13 +313,13 @@ const sections = document.querySelectorAll('section[id]');
 
 function highlightNavLink() {
     const scrollY = window.pageYOffset;
-    
+
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 100;
         const sectionId = current.getAttribute('id');
         const navLink = document.querySelector(`nav ul li a[href*="${sectionId}"]`);
-        
+
         if (navLink) {
             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
                 navLink.classList.add('active');
@@ -361,13 +365,13 @@ revealElements.forEach(element => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
-        
+
         if (targetElement) {
             const offsetTop = targetElement.offsetTop - 70;
-            
+
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
@@ -395,9 +399,9 @@ const roleElement = document.querySelector('.role');
 
 function typeEffect() {
     if (!roleElement) return;
-    
+
     const currentRole = roles[roleIndex];
-    
+
     if (isDeleting) {
         roleElement.innerHTML = `Data <span class="wonderful-color">${currentRole.substring(5, charIndex)}</span>`;
         charIndex--;
@@ -405,9 +409,9 @@ function typeEffect() {
         roleElement.innerHTML = `Data <span class="wonderful-color">${currentRole.substring(5, charIndex)}</span>`;
         charIndex++;
     }
-    
+
     let typeSpeed = isDeleting ? 50 : 100;
-    
+
     if (!isDeleting && charIndex === currentRole.length) {
         typeSpeed = 2000;
         isDeleting = true;
@@ -416,7 +420,7 @@ function typeEffect() {
         roleIndex = (roleIndex + 1) % roles.length;
         typeSpeed = 500;
     }
-    
+
     setTimeout(typeEffect, typeSpeed);
 }
 
@@ -428,7 +432,7 @@ const bgImage = document.getElementById("home");
 
 function handleProfilePicture() {
     const windowWidth = window.innerWidth;
-    
+
     if (windowWidth <= 1200) {
         bgImage.style.backgroundImage = 'none';
     } else {
@@ -508,7 +512,7 @@ const statsObserver = new IntersectionObserver((entries) => {
                 if (stat.id === 'projects-count' || stat.id === 'certifications-count') {
                     return;
                 }
-                
+
                 const target = parseInt(stat.textContent);
                 let current = 0;
                 const increment = target / 50;
@@ -542,12 +546,12 @@ function changeSlide(button, direction) {
     const images = container.querySelectorAll('.carousel-image');
     const dots = container.querySelectorAll('.dot');
     let currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
-    
+
     images[currentIndex].classList.remove('active');
     dots[currentIndex].classList.remove('active');
-    
+
     currentIndex = (currentIndex + direction + images.length) % images.length;
-    
+
     images[currentIndex].classList.add('active');
     dots[currentIndex].classList.add('active');
 }
@@ -556,10 +560,10 @@ function setSlide(dot, index) {
     const container = dot.closest('.carousel-container');
     const images = container.querySelectorAll('.carousel-image');
     const dots = container.querySelectorAll('.dot');
-    
+
     images.forEach(img => img.classList.remove('active'));
     dots.forEach(d => d.classList.remove('active'));
-    
+
     images[index].classList.add('active');
     dots[index].classList.add('active');
 }

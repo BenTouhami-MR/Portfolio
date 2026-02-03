@@ -41,7 +41,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     font-weight: 700;
 }
@@ -102,10 +107,14 @@ img {
 }
 
 @keyframes bounce {
-    0%, 80%, 100% { 
+
+    0%,
+    80%,
+    100% {
         transform: scale(0);
-    } 
-    40% { 
+    }
+
+    40% {
         transform: scale(1);
     }
 }
@@ -249,7 +258,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     padding-top: 80px;
-    background: 
+    background:
         linear-gradient(135deg, #0a0f1e 0%, #0f172a 50%, #1e293b 100%),
         radial-gradient(circle at 20% 50%, rgba(37, 99, 235, 0.08) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, rgba(190, 24, 93, 0.08) 0%, transparent 50%);
@@ -262,9 +271,9 @@ nav ul li a:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: 
-        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
-        linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-image:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
     background-size: 50px 50px;
     opacity: 0.6;
     z-index: 0;
@@ -277,7 +286,7 @@ nav ul li a:hover {
     height: 200%;
     top: -50%;
     left: -50%;
-    background: 
+    background:
         radial-gradient(circle at 30% 40%, rgba(37, 99, 235, 0.06) 0%, transparent 40%),
         radial-gradient(circle at 70% 60%, rgba(190, 24, 93, 0.06) 0%, transparent 40%),
         radial-gradient(circle at 50% 50%, rgba(30, 58, 138, 0.04) 0%, transparent 40%);
@@ -286,12 +295,16 @@ nav ul li a:hover {
 }
 
 @keyframes gradient-shift {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(0, 0) rotate(0deg);
     }
+
     33% {
         transform: translate(-5%, -5%) rotate(120deg);
     }
+
     66% {
         transform: translate(5%, 5%) rotate(240deg);
     }
@@ -379,10 +392,13 @@ nav ul li a:hover {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0) rotate(0deg);
         opacity: 0.3;
     }
+
     50% {
         transform: translateY(-100px) rotate(180deg);
         opacity: 0.8;
@@ -429,10 +445,13 @@ nav ul li a:hover {
 }
 
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         box-shadow: 0 8px 32px rgba(37, 99, 235, 0.2), inset 0 0 20px rgba(255, 255, 255, 0.08);
         transform: scale(1);
     }
+
     50% {
         box-shadow: 0 8px 40px rgba(37, 99, 235, 0.3), inset 0 0 30px rgba(255, 255, 255, 0.12);
         transform: scale(1.1);
@@ -440,15 +459,20 @@ nav ul li a:hover {
 }
 
 @keyframes float-node {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0) translateX(0);
     }
+
     25% {
         transform: translateY(-20px) translateX(10px);
     }
+
     50% {
         transform: translateY(-10px) translateX(-10px);
     }
+
     75% {
         transform: translateY(-30px) translateX(5px);
     }
@@ -647,6 +671,7 @@ nav ul li a:hover {
         opacity: 1;
         top: 8px;
     }
+
     100% {
         opacity: 0;
         top: 25px;
@@ -669,6 +694,7 @@ nav ul li a:hover {
         opacity: 0;
         transform: translateY(60px) scale(0.95);
     }
+
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -687,19 +713,53 @@ nav ul li a:hover {
 }
 
 /* Staggered animation delays for cards - DISABLED */
-.skills .card:nth-child(1) { animation-delay: 0s; }
-.skills .card:nth-child(2) { animation-delay: 0s; }
-.skills .card:nth-child(3) { animation-delay: 0s; }
-.skills .card:nth-child(4) { animation-delay: 0s; }
-.skills .card:nth-child(5) { animation-delay: 0s; }
-.skills .card:nth-child(6) { animation-delay: 0s; }
+.skills .card:nth-child(1) {
+    animation-delay: 0s;
+}
 
-.project-card:nth-child(1) { animation-delay: 0s; }
-.project-card:nth-child(2) { animation-delay: 0s; }
-.project-card:nth-child(3) { animation-delay: 0s; }
-.project-card:nth-child(4) { animation-delay: 0s; }
-.project-card:nth-child(5) { animation-delay: 0s; }
-.project-card:nth-child(6) { animation-delay: 0s; }
+.skills .card:nth-child(2) {
+    animation-delay: 0s;
+}
+
+.skills .card:nth-child(3) {
+    animation-delay: 0s;
+}
+
+.skills .card:nth-child(4) {
+    animation-delay: 0s;
+}
+
+.skills .card:nth-child(5) {
+    animation-delay: 0s;
+}
+
+.skills .card:nth-child(6) {
+    animation-delay: 0s;
+}
+
+.project-card:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.project-card:nth-child(2) {
+    animation-delay: 0s;
+}
+
+.project-card:nth-child(3) {
+    animation-delay: 0s;
+}
+
+.project-card:nth-child(4) {
+    animation-delay: 0s;
+}
+
+.project-card:nth-child(5) {
+    animation-delay: 0s;
+}
+
+.project-card:nth-child(6) {
+    animation-delay: 0s;
+}
 
 /* ==================== ABOUT SECTION ==================== */
 .about-me {
@@ -750,9 +810,12 @@ nav ul li a:hover {
 }
 
 @keyframes morph {
-    0%, 100% {
+
+    0%,
+    100% {
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     }
+
     50% {
         border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
     }
@@ -1251,12 +1314,22 @@ nav ul li a:hover {
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    overflow: visible;
+    z-index: 50;
 }
 
 .project-presentation {
     height: 240px;
     overflow: hidden;
     position: relative;
+    transition: overflow 0s 0.4s, z-index 0s;
+    z-index: 1;
+}
+
+.project-card:hover .project-presentation {
+    overflow: visible;
+    z-index: 100;
+    transition: overflow 0s, z-index 0s;
 }
 
 .project-presentation::after {
@@ -1281,12 +1354,13 @@ nav ul li a:hover {
     height: 100%;
     object-fit: contain;
     object-position: center;
-    transition: none;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     background: linear-gradient(135deg, #f5f7fa 0%, #e0e7ef 100%);
+    cursor: pointer;
 }
 
 .project-card:hover .project-presentation img {
-    transform: none;
+    transform: scale(1.15);
 }
 
 .card-body {
@@ -1574,7 +1648,7 @@ footer p {
     .about-me {
         gap: 3rem;
     }
-    
+
     .image-frame {
         width: 300px;
         height: 300px;
@@ -1585,15 +1659,15 @@ footer p {
     html {
         font-size: 15px;
     }
-    
+
     nav.navbar {
         padding: 1rem 5%;
     }
-    
+
     #menu {
         display: block;
     }
-    
+
     nav ul {
         position: fixed;
         top: 70px;
@@ -1609,61 +1683,61 @@ footer p {
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
         border-left: 1px solid rgba(96, 165, 250, 0.1);
     }
-    
+
     nav ul.is-active {
         right: 0;
     }
-    
+
     nav ul li {
         width: 100%;
         text-align: left;
         padding: 0 2rem;
     }
-    
+
     nav ul li a {
         display: block;
         padding: 1rem 0;
         font-size: 1.1rem;
         border-bottom: 1px solid rgba(96, 165, 250, 0.1);
     }
-    
+
     nav ul li:last-child a {
         border-bottom: none;
     }
-    
+
     #menu.is-active span:nth-child(1) {
         transform: rotate(45deg) translate(9px, 9px);
     }
-    
+
     #menu.is-active span:nth-child(2) {
         opacity: 0;
     }
-    
+
     #menu.is-active span:nth-child(3) {
         transform: rotate(-45deg) translate(9px, -9px);
     }
-    
+
     .about-me {
         flex-direction: column;
         text-align: center;
         padding: 5rem 5%;
     }
-    
+
     .stats-container {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .skills,
     .projects,
     .certificats,
     .contacts {
         padding: 5rem 5%;
     }
-    
+
     .education {
         padding: 5rem 5%;
     }
-    
+
     .education-container {
         grid-template-columns: 1fr;
         gap: 2.5rem;
@@ -1699,28 +1773,28 @@ footer p {
     #menu {
         display: block;
     }
-    
+
     #menu.is-active span:nth-child(1) {
         transform: rotate(45deg) translate(9px, 9px);
     }
-    
+
     #menu.is-active span:nth-child(2) {
         opacity: 0;
     }
-    
+
     #menu.is-active span:nth-child(3) {
         transform: rotate(-45deg) translate(9px, -9px);
     }
-    
+
     .lang-btn {
         padding: 0.5rem 1rem;
         font-size: 0.85rem;
     }
-    
+
     .lang-btn i {
         font-size: 0.85rem;
     }
-    
+
     .scroll-indicator {
         display: flex !important;
     }
@@ -1730,31 +1804,31 @@ footer p {
         min-height: 100vh;
         padding-bottom: 5rem;
     }
-    
+
     .data-node {
         width: 45px;
         height: 45px;
     }
-    
+
     .data-node i {
         font-size: 1.2rem;
     }
-    
+
     .btn-container {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .btn {
         width: 100%;
         max-width: 300px;
         justify-content: center;
     }
-    
+
     .btn-text-contact {
         margin-left: 0 !important;
     }
-    
+
     .scroll-indicator {
         display: flex !important;
         left: 50% !important;
@@ -1762,29 +1836,29 @@ footer p {
         bottom: 20px;
         margin: 0 auto;
     }
-    
+
     .skills .content {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .skills .box,
     .projects .box {
         grid-template-columns: 1fr;
     }
-    
+
     .stats-container {
         grid-template-columns: 1fr;
     }
-    
+
     .education-container {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .education-card {
         padding: 2rem;
     }
-    
+
     .education-logo {
         width: 80px;
         height: 80px;
@@ -1795,48 +1869,48 @@ footer p {
     html {
         font-size: 14px;
     }
-    
+
     .nameInNav h2 {
         font-size: 1rem;
     }
-    
+
     .nameInNav img {
         width: 35px;
         height: 35px;
     }
-    
+
     nav.navbar {
         padding: 1rem 4%;
     }
-    
+
     .lang-btn span {
         display: none;
     }
-    
+
     .lang-btn {
         padding: 0.5rem 0.8rem;
         min-width: auto;
     }
-    
+
     .skills .content {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-    
+
     .image-frame {
         width: 250px;
         height: 250px;
     }
-    
+
     .data-node {
         display: none;
     }
-    
+
     .particle {
         width: 30px !important;
         height: 30px !important;
     }
-    
+
     .scroll-indicator {
         left: 50% !important;
         transform: translateX(-50%) !important;
@@ -1845,30 +1919,30 @@ footer p {
         max-width: 150px;
         margin: 0 auto;
     }
-    
+
     .scroll-indicator p {
         font-size: 0.7rem;
         white-space: nowrap;
     }
-    
+
     .contact-item {
         width: 100%;
     }
-    
+
     .certificats .certif {
         width: 150px;
     }
-    
+
     .education-card {
         padding: 1.5rem;
     }
-    
+
     .education-logo {
         width: 70px;
         height: 70px;
         margin: 0 auto 1.5rem;
     }
-    
+
     .education-degree {
         font-size: 1.3rem;
     }
